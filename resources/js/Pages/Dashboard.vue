@@ -10,6 +10,7 @@ import {
 } from "@/Components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/Components/ui/tabs";
 import {Button} from "@/Components/ui/button/index.js";
+import DataTable from "@/Components/ui/data-table/DataTable.vue";
 </script>
 
 <template>
@@ -173,5 +174,6 @@ import {Button} from "@/Components/ui/button/index.js";
                 </Tabs>
             </div>
         </div>
+        <DataTable/>
     </AppLayout>
 </template>

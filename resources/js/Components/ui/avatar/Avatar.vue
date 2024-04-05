@@ -1,7 +1,7 @@
 <script setup>
 import { AvatarRoot } from "radix-vue";
 import { avatarVariant } from ".";
-import { cn } from "@/lib/utils";
+import { cn } from "@/lib/utils.js";
 
 const props = defineProps({
   class: { type: null, required: false },

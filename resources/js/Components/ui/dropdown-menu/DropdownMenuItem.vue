@@ -1,7 +1,7 @@
 <script setup>
 import { computed } from "vue";
 import { DropdownMenuItem, useForwardProps } from "radix-vue";
-import { cn } from "@/lib/utils";
+import { cn } from "@/lib/utils.js";
 
 const props = defineProps({
   disabled: { type: Boolean, required: false },

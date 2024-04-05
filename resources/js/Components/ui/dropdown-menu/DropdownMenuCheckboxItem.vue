@@ -6,7 +6,7 @@ import {
   useForwardPropsEmits,
 } from "radix-vue";
 import { Check } from "lucide-vue-next";
-import { cn } from "@/lib/utils";
+import { cn } from "@/lib/utils.js";
 
 const props = defineProps({
   checked: { type: [Boolean, String], required: false },

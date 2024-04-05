@@ -1,6 +1,15 @@
-import { clsx } from "clsx";
-import { twMerge } from "tailwind-merge";
+import {  clsx } from 'clsx'
+import { twMerge } from 'tailwind-merge'
 
-export function cn(...inputs) {
+
+ function cn(...inputs) {
   return twMerge(clsx(inputs));
 }
+ function valueUpdater(updaterOrValue, ref) {
+    ref.value
+        = typeof updaterOrValue === 'function'
+        ? updaterOrValue(ref.value)
+        : updaterOrValue
+}
+
+export { cn, valueUpdater}
